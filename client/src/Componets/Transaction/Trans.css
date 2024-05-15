@@ -1,0 +1,36 @@
+
+
+.table-container {
+    width: 80%;
+    background-color: antiquewhite;
+    margin-top: 20px;
+   margin-left: 140px;
+   height: auto;
+   overflow-y: auto;
+   border-radius: 20px;
+   border-color: aqua;
+   border-width:0in;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  th, td {
+    padding: 12px; /* Adjust padding as needed */
+    border: 1px solid #ddd; /* Add border for cells */
+    font-size: x-large;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Add background color for header */
+  }
+  
+  button {
+    padding: 8px 12px; /* Adjust button padding */
+    margin-right: 5px; /* Add margin between buttons */
+    background-color: coral;
+    border-radius: 8px;
+  }
