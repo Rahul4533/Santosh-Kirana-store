@@ -6,7 +6,7 @@ import cors from 'cors'
 import path from 'path';
 dotenv.config();
 const app=express(); 
-
+const __dirname = dirname(fileURLToPath(import.meta.url));
 connectDB();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -15,11 +15,11 @@ app.use(cors({origin: "http://localhost:8000"}));
 app.use('/api',user);  
 
 
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, './client/dist')));
 
 // Handle all other routes by serving the 'index.html' file
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+    const index = join(__dirname, './client/dist/index.html');
 });
 
 app.listen(8000,(err)=>{
