@@ -4,6 +4,7 @@ import connectDB from './config/db.js';
 import user from './routes/customer.js'
 import cors from 'cors'
 import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 import path from 'path';
 dotenv.config();
 const app=express(); 
