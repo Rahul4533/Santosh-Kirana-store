@@ -20,6 +20,7 @@ app.use(express.static(path.join(__dirname, './client/dist')));
 // Handle all other routes by serving the 'index.html' file
 app.get('*', (req, res) => {
     const index = join(__dirname, './client/dist/index.html');
+    res.sendFile(index);
 });
 
 app.listen(8000,(err)=>{
