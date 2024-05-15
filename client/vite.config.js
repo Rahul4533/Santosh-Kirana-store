@@ -10,6 +10,7 @@ export default defineConfig({
         changeOrigin: true,
         ws: true,
       }
+        
     }  
   },
   plugins: [react()],
