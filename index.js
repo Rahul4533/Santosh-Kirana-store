@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import connectDB from './config/db.js';
 import user from './routes/customer.js'
 import cors from 'cors'
+import { dirname } from 'path';
 import path from 'path';
 dotenv.config();
 const app=express(); 
